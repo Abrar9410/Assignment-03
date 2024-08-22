@@ -1,13 +1,113 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="cupcake">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-03</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#212121',
+                para1: '#494949',
+                para2: '#737373',
+                green1: '#ABEF5F',
+              },
+              fontFamily: {
+                Manrope: 'Manrope',
+              },
+              backgroundImage: {
+                next_project: "url('./assets/bg.jpg')",
+              },
+            }
+          }
+        }
+      </script>
 </head>
-<body>
-    
+<body class="font-Manrope">
+    <header class="w-11/12 mx-auto">
+        <nav class="navbar py-10 bg-base-100">
+            <div class="justify-start w-4/5 sm:w-2/5 lg:w-3/5">
+                <a class="hover:cursor-pointer text-2xl sm:text-3xl">
+                    <i class="fa-solid fa-circle-arrow-up fa-rotate-by text-green1 bg-primary rounded-full" style="--fa-rotate-angle: 45deg;"></i>
+                    <span class="text-primary font-extrabold">Rinterio</span>
+                </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-para2 text-sm xl:text-base">
+                <li><a class="hover:text-para1 hover:bg-inherit hover:font-extrabold">Home</a></li>
+                <li><a class="hover:text-para1 hover:bg-inherit hover:font-extrabold">Services</a></li>
+                <li><a class="hover:text-para1 hover:bg-inherit hover:font-extrabold">Portfolio</a></li>
+                <li><a class="hover:text-para1 hover:bg-inherit hover:font-extrabold">Blogs</a></li>
+                <li><a class="hover:text-para1 hover:bg-inherit hover:font-extrabold">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="w-1/5 justify-end sm:w-3/5 lg:navbar-end">
+                <div class="flex items-center space-x-4 hidden md:contents">
+                    <button class="bg-white p-3 rounded-full text-para2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </button>
+                    <button class="bg-white p-3 rounded-full text-para2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
+                    </button>
+                    <button class="bg-green1 w-[212px] px-5 py-3 rounded-3xl flex items-center space-x-2">
+                        <span class="text-primary text-xl font-extrabold">Book Consult</span>
+                        <span class="text-3xl"><i class="fa-solid fa-circle-arrow-up fa-rotate-by text-primary bg-white rounded-full" style="--fa-rotate-angle: 45deg;"></i></span>
+                    </button>
+                </div>
+                <div class="dropdown">
+                  <div tabindex="0" role="button" class="btn btn-ghost bg-white p-3 rounded-full text-para2 text-2xl ml-4 lg:hidden">
+                      <i class="fa-solid fa-bars"></i>
+                  </div>
+                  <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
+
+        <banner class="text-center">
+            <div class="flex justify-center">
+                <img src="./assets/banner.png" alt="">
+            </div>
+            <div class="w-11/12 mx-auto pb-11 sm:pb-16 lg:pb-24">
+                <h1 class="text-primay text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-extrabold">
+                    A barn house of this design has a striking appearance
+                </h1>
+                <p class="text-para1 text-sm my-4 mx-auto sm:text-base sm:w-4/5 sm:my-6 lg:text-lg">
+                    The barn house captivates with its blend of rustic charm and modern sophistication,
+                    featuring weathered wood, sleek metal accents, and large windows that flood the space
+                    with natural light.
+                </p>
+                <button class="bg-green1 w-4/5 sm:w-[212px] mx-auto px-5 py-3 rounded-3xl flex items-center justify-center space-x-2">
+                    <span class="text-primary text-xl font-extrabold">View Details</span>
+                    <span class="text-3xl"><i class="fa-solid fa-circle-arrow-up fa-rotate-by text-primary bg-white rounded-full" style="--fa-rotate-angle: 45deg;"></i></span>
+                </button>
+            </div>
+        </banner>
+    </header>
+    <main>
+        
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
