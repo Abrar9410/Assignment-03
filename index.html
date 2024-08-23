@@ -19,6 +19,7 @@
                 para1: '#494949',
                 para2: '#737373',
                 green1: '#ABEF5F',
+                green2: 'rgba(171, 239, 95, 0.5)'
               },
               fontFamily: {
                 Manrope: 'Manrope',
@@ -51,17 +52,17 @@
             </div>
             <div class="w-1/5 justify-end sm:w-3/5 lg:navbar-end">
                 <div class="flex items-center space-x-4 hidden md:contents">
-                    <button class="bg-white p-3 rounded-full text-para2">
+                    <button class="bg-white p-3 rounded-full shadow-md text-para2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                         </svg>
                     </button>
-                    <button class="bg-white p-3 rounded-full text-para2">
+                    <button class="bg-white p-3 rounded-full shadow-md text-para2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                         </svg>
                     </button>
-                    <button class="bg-green1 w-[212px] px-5 py-3 rounded-3xl flex items-center space-x-2">
+                    <button class="bg-green1 w-[212px] px-5 py-3 rounded-3xl shadow-md flex items-center space-x-2">
                         <span class="text-primary text-xl font-extrabold">Book Consult</span>
                         <span class="text-3xl"><i class="fa-solid fa-circle-arrow-up fa-rotate-by text-primary bg-white rounded-full" style="--fa-rotate-angle: 45deg;"></i></span>
                     </button>
@@ -96,15 +97,53 @@
                     featuring weathered wood, sleek metal accents, and large windows that flood the space
                     with natural light.
                 </p>
-                <button class="bg-green1 w-4/5 sm:w-[212px] mx-auto px-5 py-3 rounded-3xl flex items-center justify-center space-x-2">
+                <button class="bg-green2 w-4/5 sm:w-[212px] mx-auto px-5 py-3 rounded-3xl shadow-md flex items-center justify-center space-x-2">
                     <span class="text-primary text-xl font-extrabold">View Details</span>
-                    <span class="text-3xl"><i class="fa-solid fa-circle-arrow-up fa-rotate-by text-primary bg-white rounded-full" style="--fa-rotate-angle: 45deg;"></i></span>
+                    <span class="text-3xl"><i class="fa-solid fa-circle-arrow-up fa-rotate-by text-green1 bg-primary rounded-full" style="--fa-rotate-angle: 45deg;"></i></span>
                 </button>
             </div>
         </banner>
     </header>
     <main>
-        
+        <!-- About Us -->
+        <section class="bg-neutral-200 py-4 h-[5000px]">
+            <div class="hidden lg:contents"><img class="lg:ml-2 xl:ml-4 2xl:ml-10 pb-4" src="./assets/Vector.png" alt=""></div>
+            <div class="w-11/12 mx-auto flex flex-col lg:flex-row lg:justify-between lg:items-center gap-9">
+                <div class="lg:max-w-[50%]">
+                    <div class="bg-white rounded-3xl w-32 mx-auto lg:m-0 py-2 shadow-md text-para1 flex justify-center items-center space-x-2">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <p class="text-base font-bold">About Us</p>
+                    </div>
+                    <div class="text-center lg:text-left my-6 space-y-6">
+                        <h2 class="text-primary text-4xl drop-shadow-md font-black">We design thoughtful, liveable spaces</h2>
+                        <p class="text-para1 drop-shadow-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab earum culpa sunt alias repudiandae atque, temporibus dignissimos velit dolor reprehenderit.</p>
+                    </div>
+                    <div class="flex flex-col gap-6 md:flex-row lg:flex-col">
+                        <div class="card p-6 flex-row items-center bg-white shadow-xl">
+                            <figure>
+                                <img src="./assets/commercial.png" alt="">
+                            </figure>
+                            <div class="card-body">
+                              <h2 class="card-title text-para1 text-xl font-extrabold">Commercial</h2>
+                              <p class="text-para2 text-base">Click the button to watch on Jetflix app.</p>
+                            </div>
+                        </div>
+                        <div class="card p-6 flex-row items-center bg-white shadow-xl">
+                            <figure>
+                                <img src="./assets/residential.png" alt="">
+                            </figure>
+                            <div class="card-body">
+                              <h2 class="card-title text-para1 text-xl font-extrabold">Residential</h2>
+                              <p class="text-para2 text-base">Click the button to watch on Jetflix app.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:max-w-[50%]">
+                    <img class="w-full drop-shadow-lg" src="./assets/Rectangle.png" alt="">
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
